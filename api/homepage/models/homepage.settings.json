@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepages",
+  "info": {
+    "name": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageHeader": {
+      "type": "string"
+    },
+    "pathName": {
+      "type": "string"
+    },
+    "menuIcon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "speech": {
+      "type": "string"
+    },
+    "menuName": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "enumeration",
+      "enum": [
+        "navigate",
+        "openDialog",
+        "speak"
+      ]
+    }
+  }
+}

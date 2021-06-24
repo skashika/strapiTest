@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "floors",
+  "info": {
+    "name": "Floor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "floorName": {
+      "type": "string"
+    },
+    "floorImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "floorNumber": {
+      "type": "integer"
+    },
+    "speech": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_faq_srls",
+  "info": {
+    "name": "srl",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "guideName": {
+      "type": "string"
+    },
+    "guide": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

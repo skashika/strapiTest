@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_faq_faqsrls",
+  "info": {
+    "name": "faqsrl",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    }
+  }
+}

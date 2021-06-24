@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faq_categories",
+  "info": {
+    "name": "FaqCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "displayType": {
+      "type": "enumeration",
+      "enum": [
+        "expansionPanel",
+        "button"
+      ]
+    }
+  }
+}
